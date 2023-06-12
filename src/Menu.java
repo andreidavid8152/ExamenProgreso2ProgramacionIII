@@ -50,4 +50,12 @@ public class Menu {
         return text;
     }
 
+    public void quemarDatos(){
+        ingresarPlato("Pizza", 15.0, 800, 20);
+        ingresarPlato("Ensalada", 10.0, 300, 15);
+        ingresarPlato("Burger", 12.0, 700, 25);
+        ingresarPlato("Pasta", 14.0, 600, 22);
+        ingresarPlato("Sopa", 8.0, 250,100);
+    }
+
 }

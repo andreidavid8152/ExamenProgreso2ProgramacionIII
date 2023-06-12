@@ -43,6 +43,7 @@ public class mainForm extends JFrame {
         QuemarDatosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                quemarDatos();
             }
         });
         buscarModifButton.addActionListener(new ActionListener() {
@@ -169,6 +170,11 @@ public class mainForm extends JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Error. El campo nombre esta vacio");
         }
+    }
+
+    public void quemarDatos(){
+        menu.quemarDatos();
+        textAIngresoPlatos.setText(menu.imprimirMenu());
     }
 
     public void eliminarPlato(){
